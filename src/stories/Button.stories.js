@@ -1,48 +1,23 @@
-import { createButton } from './Button';
+import Button from "../_includes/components/atoms/buttons/button.njk";
 
-// More on default export: https://storybook.js.org/docs/html/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
-  // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-    label: { control: 'text' },
-    onClick: { action: 'onClick' },
-    primary: { control: 'boolean' },
-    size: {
-      control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
-    },
-  },
+   title: "Design System/Atoms/Button",
+   argTypes: {
+      label: { control: "text" },
+      isStorybook: {
+         control: false,
+         description: "Only used to display Macro in preview",
+         type: { default: true },
+      },
+   },
 };
 
-// More on component templates: https://storybook.js.org/docs/html/writing-stories/introduction#using-args
-const Template = ({ label, ...args }) => {
-  // You can either use a function to create DOM elements or use a plain html string!
-  // return `<div>${label}</div>`;
-  return createButton({ label, ...args });
+const Template = ({ label, isStorybook }) => {
+   return Button({ label, isStorybook });
 };
 
-export const Primary = Template.bind({});
-// More on args: https://storybook.js.org/docs/html/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: 'Button',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
-};
-
-export const Large = Template.bind({});
-Large.args = {
-  size: 'large',
-  label: 'Button',
-};
-
-export const Small = Template.bind({});
-Small.args = {
-  size: 'small',
-  label: 'Button',
+export const Text = Template.bind({});
+Text.args = {
+   label: "Hello",
+   isStorybook: true,
 };

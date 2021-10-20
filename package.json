@@ -6,7 +6,9 @@
    "scripts": {
       "clean": "rimraf ./_site",
       "dev": "yarn clean && ELEVENTY_ENV=development eleventy --serve --port=9000",
-      "build": "yarn clean && ELEVENTY_ENV=production eleventy"
+      "build": "yarn clean && ELEVENTY_ENV=production eleventy",
+      "storybook": "start-storybook -p 6006",
+      "build-storybook": "build-storybook"
    },
    "repository": {
       "type": "git",
@@ -23,7 +25,9 @@
       "@storybook/addon-actions": "^6.3.12",
       "@storybook/addon-essentials": "^6.3.12",
       "@storybook/addon-links": "^6.3.12",
+      "@storybook/builder-webpack5": "^6.3.12",
       "@storybook/html": "^6.3.12",
+      "@storybook/manager-webpack5": "^6.3.12",
       "babel-loader": "^8.2.2",
       "html-minifier": "^4.0.0",
       "nunjucks": "^3.2.3",
