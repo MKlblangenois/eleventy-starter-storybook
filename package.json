@@ -4,8 +4,9 @@
    "description": "",
    "main": "index.js",
    "scripts": {
-      "dev": "ELEVENTY_ENV=development eleventy --serve --port=9000",
-      "build": "ELEVENTY_ENV=production eleventy"
+      "clean": "rimraf ./_site",
+      "dev": "yarn clean && ELEVENTY_ENV=development eleventy --serve --port=9000",
+      "build": "yarn clean && ELEVENTY_ENV=production eleventy"
    },
    "repository": {
       "type": "git",
@@ -20,6 +21,7 @@
    "dependencies": {
       "@11ty/eleventy": "^0.12.1",
       "html-minifier": "^4.0.0",
-      "nunjucks": "^3.2.3"
+      "nunjucks": "^3.2.3",
+      "rimraf": "^3.0.2"
    }
 }
