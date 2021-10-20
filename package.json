@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/MKlblangenois/eleventy-starter-storybook/issues"
   },
-  "homepage": "https://github.com/MKlblangenois/eleventy-starter-storybook#readme"
+  "homepage": "https://github.com/MKlblangenois/eleventy-starter-storybook#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "html-minifier": "^4.0.0",
+    "nunjucks": "^3.2.3"
+  }
 }
