@@ -12,8 +12,8 @@
       "build:eleventy": "ELEVENTY_ENV=production eleventy",
       "build": "run-s clean build:*",
       "debug:build": "run-s clean build:*",
-      "storybook": "start-storybook -p 6006",
-      "build-storybook": "build-storybook"
+      "storybook": "yarn build:webpack && start-storybook -p 6006",
+      "build-storybook": "yarn build:webpack && build-storybook"
    },
    "repository": {
       "type": "git",
