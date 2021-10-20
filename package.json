@@ -1,24 +1,25 @@
 {
-  "name": "eleventy-starter-storybook",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MKlblangenois/eleventy-starter-storybook.git"
-  },
-  "author": "Logan Blangenois",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MKlblangenois/eleventy-starter-storybook/issues"
-  },
-  "homepage": "https://github.com/MKlblangenois/eleventy-starter-storybook#readme",
-  "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
-    "html-minifier": "^4.0.0",
-    "nunjucks": "^3.2.3"
-  }
+   "name": "eleventy-starter-storybook",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "dev": "ELEVENTY_ENV=development eleventy --serve --port=9000",
+      "build": "ELEVENTY_ENV=production eleventy"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/MKlblangenois/eleventy-starter-storybook.git"
+   },
+   "author": "Logan Blangenois",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/MKlblangenois/eleventy-starter-storybook/issues"
+   },
+   "homepage": "https://github.com/MKlblangenois/eleventy-starter-storybook#readme",
+   "dependencies": {
+      "@11ty/eleventy": "^0.12.1",
+      "html-minifier": "^4.0.0",
+      "nunjucks": "^3.2.3"
+   }
 }
