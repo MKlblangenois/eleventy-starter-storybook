@@ -1,0 +1,21 @@
+/* purgecss start ignore */
+@tailwind base;
+/* purgecss end ignore */
+@tailwind components;
+@tailwind utilities;
+
+/* purgecss start ignore */
+* {
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+#skip-to-main-link {
+   position: absolute;
+   top: 0;
+   right: 100%;
+}
+#skip-to-main-link:focus {
+   right: auto;
+}
+/* purgecss end ignore */
