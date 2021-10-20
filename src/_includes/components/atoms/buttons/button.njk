@@ -1,3 +1,7 @@
 {% macro Button(label = "My button") %}
 	<button type="button">{{ label }}</button>
 {% endmacro %}
+
+{% if isStorybook %}
+	{{ Button(label) }}
+{% endif %}
