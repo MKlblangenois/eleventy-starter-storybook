@@ -1,0 +1,19 @@
+{
+  "name": "eleventy-starter-storybook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKlblangenois/eleventy-starter-storybook.git"
+  },
+  "author": "Logan Blangenois",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MKlblangenois/eleventy-starter-storybook/issues"
+  },
+  "homepage": "https://github.com/MKlblangenois/eleventy-starter-storybook#readme"
+}
